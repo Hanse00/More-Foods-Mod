@@ -1,10 +1,10 @@
 [
 {
-  "modid": "AMT",
-  "name": "Advanced Minecraft Technology",
+  "modid": "MFM",
+  "name": "More Foods Mod",
   "description": "",
   "version": "@VERSION@b@BUILD_NUMBER@",
-  "url": "https://github.com/Hanse00/AMT",
+  "url": "https://github.com/Hanse00/More-Foods-Mod",
   "updateUrl": "",
   "authorList": [ "hanse00" ],
   "credits": "",
