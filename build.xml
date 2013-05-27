@@ -1,0 +1,69 @@
+<?xml version="1.0" ?> 
+<project name="More Foods Mod">
+	
+	<property file="build.properties" prefix="build"/>
+	<property file="build_number.properties" prefix="build_number"/>
+	
+	<target name="clean">
+		<delete file="${build.dir.development}\MCP\src\minecraft\mcmod.info" />
+		<delete dir="${build.dir.development}\MCP\src\minecraft\net\hanse00" />
+		<delete dir="${build.dir.development}\MCP\reobf\minecraft" />
+	</target>
+
+	<target name="increment_build_number">
+		<propertyfile file="build_number.properties">
+			<entry key="build_number" type="int" operation="+" default="1"/>
+		</propertyfile>
+	</target>
+	
+	<target name="prep">
+		<copy todir="${build.dir.development}\MCP\src\minecraft">
+			<fileset dir="${build.dir.development}\source\MoreFoodsMod\mfm_common" />
+		</copy>
+	</target>
+
+	<target name="replace_tokens">
+		<replace dir="${build.dir.development}\MCP\src\minecraft" token="@VERSION@" value="${build.mod.version}" />
+		<replace dir="${build.dir.development}\MCP\src\minecraft" token="@BUILD_NUMBER@" value="${build_number.build_number}" />
+	</target>
+	
+	<target name="recompile">
+		<exec dir="${build.dir.development}\MCP" executable="cmd" osfamily="windows">
+			<arg line="/c recompile.bat" />
+		</exec>
+		<exec dir="${build.dir.development}\MCP" executable="bash" osfamily="unix">
+			<arg line="recompile.sh" />
+		</exec>
+	</target>
+	
+	<target name="reobfuscate">
+		<exec dir="${build.dir.development}\MCP" executable="cmd" osfamily="windows">
+			<arg line="/c reobfuscate_srg.bat" />
+		</exec>
+		<exec dir="${build.dir.development}\MCP" executable="bash" osfamily="unix">
+			<arg line="reobfuscate_srg.sh" />
+		</exec>
+	</target>
+	
+	<target name="build">
+		<!-- Prep for the release -->
+		<antcall target="clean" />
+		<antcall target="increment_build_number" />
+		<antcall target="prep" />
+		<antcall target="replace_tokens" />
+		<antcall target="recompile" />		
+		<antcall target="reobfuscate" />
+		
+		<!-- Build the jar -->
+		<mkdir dir="${build.dir.development}\${build.dir.release}\MoreFoodsMod\${build.mod.version}" />
+		<jar destfile="${build.dir.development}\${build.dir.release}\MoreFoodsMod\${build.mod.version}\MFM-${build.mod.version}b${build_number.build_number}.jar">
+			<fileset dir="${build.dir.development}\MCP\src\minecraft\" includes="mcmod.info" />
+			<fileset dir="${build.dir.development}\MCP\reobf\minecraft\" />
+			<fileset dir="${build.dir.development}\source\MoreFoodsMod\resources"/>
+		</jar>
+			
+	<!-- Clean up the MCP source now that we are done -->
+		<antcall target="clean" />
+	</target>
+	
+</project>

@@ -1,0 +1,18 @@
+[
+{
+  "modid": "AMT",
+  "name": "Advanced Minecraft Technology",
+  "description": "",
+  "version": "@VERSION@b@BUILD_NUMBER@",
+  "url": "https://github.com/Hanse00/AMT",
+  "updateUrl": "",
+  "authorList": [ "hanse00" ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
