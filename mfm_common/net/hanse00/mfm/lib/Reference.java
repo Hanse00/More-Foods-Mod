@@ -14,4 +14,5 @@ public class Reference {
     public static final String MOD_ID = "MFM";
     public static final String MOD_NAME = "More Foods Mod";
     public static final String VERSION = "@VERSION@b@BUILD_NUMBER@";
+    public static final int SHIFTED_ID_RANGE_CORRECTION = 256;
 }

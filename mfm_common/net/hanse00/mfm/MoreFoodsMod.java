@@ -1,6 +1,9 @@
 package net.hanse00.mfm;
 
+import net.hanse00.mfm.item.ModItems;
 import net.hanse00.mfm.lib.Reference;
+import net.hanse00.mfm.util.MFMDropsEvent;
+import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PostInit;
@@ -28,12 +31,12 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class MoreFoodsMod {
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
-    
+    ModItems.init();
     }
     
     @Init
     public void init(FMLInitializationEvent event) {
-        
+        MinecraftForge.EVENT_BUS.register(new MFMDropsEvent());
     }
     
     @PostInit
