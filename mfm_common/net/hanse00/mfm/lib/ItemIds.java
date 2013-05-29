@@ -11,6 +11,9 @@ package net.hanse00.mfm.lib;
  */
 
 public class ItemIds {
-    public static int RAW_BACON = 20000;
-    public static int COOKED_BACON = 20001;
+    public static int RAW_BACON_DEFAULT = 5000;
+    public static int COOKED_BACON_DEFAULT = 5001;
+    
+    public static int RAW_BACON;
+    public static int COOKED_BACON;
 }

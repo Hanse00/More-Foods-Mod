@@ -55,8 +55,8 @@
 		<antcall target="reobfuscate" />
 		
 		<!-- Build the jar -->
-		<mkdir dir="${build.dir.development}\${build.dir.release}\MoreFoodsMod\${build.mod.version}" />
-		<jar destfile="${build.dir.development}\${build.dir.release}\MoreFoodsMod\${build.mod.version}\MFM-${build.mod.version}b${build_number.build_number}.jar">
+		<mkdir dir="${build.dir.development}\${build.dir.release}\${build.minecraft.version}\MoreFoodsMod\${build.mod.version}" />
+		<jar destfile="${build.dir.development}\${build.dir.release}\${build.minecraft.version}\MoreFoodsMod\${build.mod.version}\MFM-${build.mod.version}b${build_number.build_number}.jar">
 			<fileset dir="${build.dir.development}\MCP\src\minecraft\" includes="mcmod.info" />
 			<fileset dir="${build.dir.development}\MCP\reobf\minecraft\" />
 			<fileset dir="${build.dir.development}\source\MoreFoodsMod\resources"/>
