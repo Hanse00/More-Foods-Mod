@@ -33,8 +33,13 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class MoreFoodsMod {
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
+        // Initialize the configuration
         Config.init(event);
+        
+        // Initialize mod blocks
         ModBlocks.init();
+        
+        // Initialize mod items
         ModItems.init();
     }
     

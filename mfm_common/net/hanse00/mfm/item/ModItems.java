@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
+import net.minecraftforge.common.MinecraftForge;
 
 /**
  * More-Foods-Mod
@@ -39,6 +40,9 @@ public class ModItems {
         LanguageRegistry.addName(lettuce, "Lettuce");
         LanguageRegistry.addName(lettuceSeeds, "Lettuce Seeds");
         
+        //Add recipes
         FurnaceRecipes.smelting().addSmelting(baconRaw.itemID, new ItemStack(baconCooked), 0.35F);
+        
+        MinecraftForge.addGrassSeed(new ItemStack(lettuceSeeds), 2);
     }
 }
