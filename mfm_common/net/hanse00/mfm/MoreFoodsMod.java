@@ -1,5 +1,6 @@
 package net.hanse00.mfm;
 
+import net.hanse00.mfm.block.ModBlocks;
 import net.hanse00.mfm.item.ModItems;
 import net.hanse00.mfm.lib.Reference;
 import net.hanse00.mfm.util.Config;
@@ -33,6 +34,7 @@ public class MoreFoodsMod {
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
         Config.init(event);
+        ModBlocks.init();
         ModItems.init();
     }
     

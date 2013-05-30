@@ -11,5 +11,8 @@ package net.hanse00.mfm.lib;
  */
 
 public class BlockIds {
-    public static int LETTUCE_DEFAULT = 500;
+    //Default block ids
+    public static int LETTUCE_PLANT_DEFAULT = 500;
+    
+    public static int LETTUCE_PLANT;
 }

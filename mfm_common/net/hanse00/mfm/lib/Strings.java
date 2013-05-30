@@ -11,9 +11,12 @@ package net.hanse00.mfm.lib;
  */
 
 public class Strings {
-    public static final String LETTUCE_NAME = "lettuce";
+    //Blocks
+    public static final String LETTUCE_PLANT_NAME = "lettucePlant";
     
     //Items
-    public static final String RAW_BACON_NAME = "rawBacon";
-    public static final String COOKED_BACON_NAME = "cookedBacon";
+    public static final String BACON_RAW_NAME = "baconRaw";
+    public static final String BACON_COOKED_NAME = "baconCooked";
+    public static final String LETTUCE_NAME = "lettuce";
+    public static final String LETTUCE_SEEDS_NAME = "lettuceSeeds";
 }
