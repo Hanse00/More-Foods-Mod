@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Danish (da_DK) Localization File</comment>
+	<entry key="item.baconRaw.name">Rå Bacon</entry>
+	<entry key="item.baconCooked.name">Stegt Bacon</entry>
+	<entry key="item.lettuce.name">Salat</entry>
+	<entry key="item.lettuceSeeds.name">Salat Frø</entry>
+	<entry key="item.tomato.name">Tomat</entry>
+	<entry key="item.tomatoSeeds.name">Tomat Frø</entry>
+	<entry key="item.blt.name">BLT</entry>
+	<entry key="block.lettucePlant.name">Salat Plante</entry>
+	<entry key="block.tomatoPlant.name">Tomat Plante</entry>
+</properties>
