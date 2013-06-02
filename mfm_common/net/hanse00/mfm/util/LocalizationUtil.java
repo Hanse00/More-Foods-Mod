@@ -4,12 +4,12 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 /**
  * More Foods Mod
- *
+ * 
  * LocalizationUtil
  * 
  * @author pahimar
  * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
- *
+ * 
  */
 public class LocalizationUtil {
     public static boolean isXMLLanguageFile(String fileName) {
@@ -17,7 +17,8 @@ public class LocalizationUtil {
     }
 
     public static String getLocaleFromFileName(String fileName) {
-        return fileName.substring(fileName.lastIndexOf('/') + 1, fileName.lastIndexOf('.'));
+        return fileName.substring(fileName.lastIndexOf('/') + 1,
+                fileName.lastIndexOf('.'));
     }
 
     public static String getLocalizedString(String key) {

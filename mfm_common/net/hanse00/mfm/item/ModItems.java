@@ -49,7 +49,6 @@ public class ModItems {
         blt = new ItemMFMFood(ItemIds.BLT, 10, 1.0F, false)
                 .setUnlocalizedName(Strings.BLT_NAME);
 
-
         // Add recipes
         FurnaceRecipes.smelting().addSmelting(baconRaw.itemID,
                 new ItemStack(baconCooked), 0.35F);

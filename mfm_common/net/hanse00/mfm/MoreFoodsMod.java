@@ -31,7 +31,7 @@ public class MoreFoodsMod {
     public void preInit(FMLPreInitializationEvent event) {
         // Load the localization files into the LanguageRegistry
         LocalizationHandler.loadLanguages();
-        
+
         // Initialize the configuration
         Config.init(event);
 

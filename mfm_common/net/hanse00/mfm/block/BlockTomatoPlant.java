@@ -51,18 +51,18 @@ public class BlockTomatoPlant extends BlockCrops {
     }
 
     @Override
-    public int getRenderType()
-    {
+    public int getRenderType() {
         return 1;
     }
-    
+
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister par1IconRegister) {
         iconArray = new Icon[4];
 
         for (int i = 0; i < iconArray.length; ++i) {
-            iconArray[i] = par1IconRegister.registerIcon(Reference.MOD_ID + ":tomatoPlant_" + i);
+            iconArray[i] = par1IconRegister.registerIcon(Reference.MOD_ID
+                    + ":tomatoPlant_" + i);
         }
     }
 }

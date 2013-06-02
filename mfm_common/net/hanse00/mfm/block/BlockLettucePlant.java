@@ -49,10 +49,9 @@ public class BlockLettucePlant extends BlockCrops {
     protected int getCropItem() {
         return ModItems.lettuce.itemID;
     }
-    
+
     @Override
-    public int getRenderType()
-    {
+    public int getRenderType() {
         return 1;
     }
 
@@ -62,7 +61,8 @@ public class BlockLettucePlant extends BlockCrops {
         iconArray = new Icon[4];
 
         for (int i = 0; i < iconArray.length; ++i) {
-            iconArray[i] = par1IconRegister.registerIcon(Reference.MOD_ID + ":lettucePlant_" + i);
+            iconArray[i] = par1IconRegister.registerIcon(Reference.MOD_ID
+                    + ":lettucePlant_" + i);
         }
     }
 }
