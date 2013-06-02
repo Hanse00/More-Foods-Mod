@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Polish (pl_PL) Localization File</comment>
+	<entry key="item.baconRaw.name">Boczek Surowy</entry>
+	<entry key="item.baconCooked.name">Boczek Smarzony</entry>
+	<entry key="item.lettuce.name">Sałata</entry>
+	<entry key="item.lettuceSeeds.name">Nasiona Sałaty</entry>
+	<entry key="item.tomato.name">Pomodir</entry>
+	<entry key="item.tomatoSeeds.name">Nasiona Pomidora</entry>
+	<entry key="item.blt.name">BLT</entry>
+	<entry key="block.lettucePlant.name">Sadzonka Sałaty</entry>
+	<entry key="block.tomatoPlant.name">Sadzonka Pomidora</entry>
+</properties>

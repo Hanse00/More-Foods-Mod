@@ -16,6 +16,7 @@ public class Localizations {
     public static String[] localeFiles = {
             LANG_RESOURCE_LOCATION + "en_US.xml",
             LANG_RESOURCE_LOCATION + "da_DK.xml",
-            LANG_RESOURCE_LOCATION + "fr_FR.xml" };
+            LANG_RESOURCE_LOCATION + "fr_FR.xml",
+            LANG_RESOURCE_LOCATION + "pl_PL.xml" };
 
 }
