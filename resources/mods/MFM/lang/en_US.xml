@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>English (en_US) Localization File</comment>
+	<entry key="item.baconRaw.name">Raw Bacon</entry>
+	<entry key="item.baconCooked.name">Cooked Bacon</entry>
+	<entry key="item.lettuce.name">Lettuce</entry>
+	<entry key="item.lettuceSeeds.name">Lettuce Seeds</entry>
+	<entry key="item.tomato.name">Tomato</entry>
+	<entry key="item.tomatoSeeds.name">Tomato Seeds</entry>
+	<entry key="item.blt.name">BLT</entry>
+	<entry key="block.lettucePlant.name">Lettuce Plant</entry>
+	<entry key="block.tomatoPlant.name">Tomato Plant</entry>
+</properties>

@@ -4,6 +4,7 @@ import net.hanse00.mfm.block.ModBlocks;
 import net.hanse00.mfm.item.ModItems;
 import net.hanse00.mfm.lib.Reference;
 import net.hanse00.mfm.util.Config;
+import net.hanse00.mfm.util.LocalizationHandler;
 import net.hanse00.mfm.util.MFMDropsEvent;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
@@ -28,6 +29,9 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class MoreFoodsMod {
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
+        // Load the localization files into the LanguageRegistry
+        LocalizationHandler.loadLanguages();
+        
         // Initialize the configuration
         Config.init(event);
 

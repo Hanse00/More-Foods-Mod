@@ -9,7 +9,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 /**
  * More Foods Mod
@@ -50,14 +49,6 @@ public class ModItems {
         blt = new ItemMFMFood(ItemIds.BLT, 10, 1.0F, false)
                 .setUnlocalizedName(Strings.BLT_NAME);
 
-        // Register localized names for blocks
-        LanguageRegistry.addName(baconRaw, "Raw Bacon");
-        LanguageRegistry.addName(baconCooked, "Cooked Bacon");
-        LanguageRegistry.addName(lettuce, "Lettuce");
-        LanguageRegistry.addName(lettuceSeeds, "Lettuce Seeds");
-        LanguageRegistry.addName(tomato, "Tomato");
-        LanguageRegistry.addName(tomatoSeeds, "Tomato Seeds");
-        LanguageRegistry.addName(blt, "BLT");
 
         // Add recipes
         FurnaceRecipes.smelting().addSmelting(baconRaw.itemID,

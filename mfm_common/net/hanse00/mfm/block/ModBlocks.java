@@ -4,7 +4,6 @@ import net.hanse00.mfm.lib.BlockIds;
 import net.hanse00.mfm.lib.Strings;
 import net.minecraft.block.Block;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 /**
  * More Foods Mod
@@ -29,8 +28,5 @@ public class ModBlocks {
 
         GameRegistry.registerBlock(lettucePlant, Strings.LETTUCE_PLANT_NAME);
         GameRegistry.registerBlock(tomatoPlant, Strings.TOMATO_PLANT_NAME);
-
-        LanguageRegistry.addName(lettucePlant, "Lettuce");
-        LanguageRegistry.addName(tomatoPlant, "Tomato Plant");
     }
 }
