@@ -7,7 +7,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 /**
- * More-Foods-Mod
+ * More Foods Mod
  * 
  * ItemMFMFood
  * 
@@ -21,10 +21,13 @@ public class ItemMFMFood extends ItemFood {
     public ItemMFMFood(int par1, int par2, float par3, boolean par4) {
         super(par1 - Reference.SHIFTED_ID_RANGE_CORRECTION, par2, par3, par4);
     }
-    
+
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister iconRegister) {
-        itemIcon = iconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
+        itemIcon = iconRegister.registerIcon(Reference.MOD_ID
+                + ":"
+                + this.getUnlocalizedName().substring(
+                        this.getUnlocalizedName().indexOf(".") + 1));
     }
 }

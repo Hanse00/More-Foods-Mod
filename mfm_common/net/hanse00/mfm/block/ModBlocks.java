@@ -1,13 +1,13 @@
 package net.hanse00.mfm.block;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.hanse00.mfm.lib.BlockIds;
 import net.hanse00.mfm.lib.Strings;
 import net.minecraft.block.Block;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 /**
- * More-Foods-Mod
+ * More Foods Mod
  * 
  * ModBlocks
  * 
@@ -17,14 +17,20 @@ import net.minecraft.block.Block;
  */
 
 public class ModBlocks {
-    //Mod block instances
+    // Mod block instances
     public static Block lettucePlant;
-    
+    public static Block tomatoPlant;
+
     public static void init() {
-        lettucePlant = new BlockLettucePlant(BlockIds.LETTUCE_PLANT).setUnlocalizedName(Strings.LETTUCE_PLANT_NAME);
-        
+        lettucePlant = new BlockLettucePlant(BlockIds.LETTUCE_PLANT)
+                .setUnlocalizedName(Strings.LETTUCE_PLANT_NAME);
+        tomatoPlant = new BlockTomatoPlant(BlockIds.TOMATO_PLANT)
+                .setUnlocalizedName(Strings.TOMATO_PLANT_NAME);
+
         GameRegistry.registerBlock(lettucePlant, Strings.LETTUCE_PLANT_NAME);
-        
+        GameRegistry.registerBlock(tomatoPlant, Strings.TOMATO_PLANT_NAME);
+
         LanguageRegistry.addName(lettucePlant, "Lettuce");
+        LanguageRegistry.addName(tomatoPlant, "Tomato Plant");
     }
 }

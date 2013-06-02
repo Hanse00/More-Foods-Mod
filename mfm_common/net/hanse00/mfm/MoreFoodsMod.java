@@ -15,7 +15,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 /**
- * More-Foods-Mod
+ * More Foods Mod
  * 
  * MoreFoodsMod
  * 
@@ -24,32 +24,27 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
  * 
  */
 
-@Mod(
-        modid = Reference.MOD_ID,
-        name = Reference.MOD_NAME,
-        version = Reference.VERSION
-)
-
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class MoreFoodsMod {
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
         // Initialize the configuration
         Config.init(event);
-        
+
         // Initialize mod blocks
         ModBlocks.init();
-        
+
         // Initialize mod items
         ModItems.init();
     }
-    
+
     @Init
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(new MFMDropsEvent());
     }
-    
+
     @PostInit
     public void postInit(FMLPostInitializationEvent event) {
-        
+
     }
 }

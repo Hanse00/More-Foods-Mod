@@ -11,18 +11,18 @@ import cpw.mods.fml.relauncher.SideOnly;
 /**
  * More Foods Mod
  * 
- * BlockLettucePlant
+ * BlockTomatoPlant
  * 
  * @author hanse00
  * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
  * 
  */
 
-public class BlockLettucePlant extends BlockCrops {
+public class BlockTomatoPlant extends BlockCrops {
     @SideOnly(Side.CLIENT)
     private Icon[] iconArray;
 
-    public BlockLettucePlant(int par1) {
+    public BlockTomatoPlant(int par1) {
         super(par1);
     }
 
@@ -42,27 +42,27 @@ public class BlockLettucePlant extends BlockCrops {
 
     @Override
     protected int getSeedItem() {
-        return ModItems.lettuceSeeds.itemID;
+        return ModItems.tomatoSeeds.itemID;
     }
 
     @Override
     protected int getCropItem() {
-        return ModItems.lettuce.itemID;
+        return ModItems.tomato.itemID;
     }
-    
+
     @Override
     public int getRenderType()
     {
         return 1;
     }
-
+    
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister par1IconRegister) {
         iconArray = new Icon[4];
 
         for (int i = 0; i < iconArray.length; ++i) {
-            iconArray[i] = par1IconRegister.registerIcon(Reference.MOD_ID + ":lettucePlant_" + i);
+            iconArray[i] = par1IconRegister.registerIcon(Reference.MOD_ID + ":tomatoPlant_" + i);
         }
     }
 }

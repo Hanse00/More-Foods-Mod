@@ -1,7 +1,7 @@
 package net.hanse00.mfm.lib;
 
 /**
- * More-Foods-Mod
+ * More Foods Mod
  * 
  * BlockIds
  * 
@@ -11,8 +11,10 @@ package net.hanse00.mfm.lib;
  */
 
 public class BlockIds {
-    //Default block ids
+    // Default block ids
     public static int LETTUCE_PLANT_DEFAULT = 500;
-    
+    public static int TOMATO_PLANT_DEFAULT = 501;
+
     public static int LETTUCE_PLANT;
+    public static int TOMATO_PLANT;
 }

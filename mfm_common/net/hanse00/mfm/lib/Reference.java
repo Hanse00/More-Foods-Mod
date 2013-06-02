@@ -1,7 +1,7 @@
 package net.hanse00.mfm.lib;
 
 /**
- * More-Foods-Mod
+ * More Foods Mod
  * 
  * Reference
  * 
