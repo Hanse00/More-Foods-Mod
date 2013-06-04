@@ -1,10 +1,14 @@
 package net.hanse00.mfm.block;
 
+import java.util.ArrayList;
+
 import net.hanse00.mfm.item.ModItems;
 import net.hanse00.mfm.lib.Reference;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
+import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -53,6 +57,33 @@ public class BlockTomatoPlant extends BlockCrops {
     @Override
     public int getRenderType() {
         return 1;
+    }
+    
+    @Override
+    public void dropBlockAsItemWithChance(World par1World, int par2, int par3, int par4, int par5, float par6, int par7)
+    {
+        for (int i = 0; i < 4; i = i + 1) {
+            super.dropBlockAsItemWithChance(par1World, par2, par3, par4, par5, par6, 0);
+        }
+    }
+    
+    @Override 
+    public ArrayList<ItemStack> getBlockDropped(World world, int x, int y, int z, int metadata, int fortune)
+    {
+        ArrayList<ItemStack> ret = super.getBlockDropped(world, x, y, z, metadata, fortune);
+
+        if (metadata >= 7)
+        {
+            for (int n = 0; n < 0 + fortune; n++)
+            {
+                if (world.rand.nextInt(15) <= metadata)
+                {
+                    ret.add(new ItemStack(this.getSeedItem(), 1, 0));
+                }
+            }
+        }
+
+        return ret;
     }
 
     @Override
