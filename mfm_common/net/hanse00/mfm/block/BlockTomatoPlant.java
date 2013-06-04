@@ -58,26 +58,25 @@ public class BlockTomatoPlant extends BlockCrops {
     public int getRenderType() {
         return 1;
     }
-    
+
     @Override
-    public void dropBlockAsItemWithChance(World par1World, int par2, int par3, int par4, int par5, float par6, int par7)
-    {
+    public void dropBlockAsItemWithChance(World par1World, int par2, int par3,
+            int par4, int par5, float par6, int par7) {
         for (int i = 0; i < 4; i = i + 1) {
-            super.dropBlockAsItemWithChance(par1World, par2, par3, par4, par5, par6, 0);
+            super.dropBlockAsItemWithChance(par1World, par2, par3, par4, par5,
+                    par6, 0);
         }
     }
-    
-    @Override 
-    public ArrayList<ItemStack> getBlockDropped(World world, int x, int y, int z, int metadata, int fortune)
-    {
-        ArrayList<ItemStack> ret = super.getBlockDropped(world, x, y, z, metadata, fortune);
 
-        if (metadata >= 7)
-        {
-            for (int n = 0; n < 0 + fortune; n++)
-            {
-                if (world.rand.nextInt(15) <= metadata)
-                {
+    @Override
+    public ArrayList<ItemStack> getBlockDropped(World world, int x, int y,
+            int z, int metadata, int fortune) {
+        ArrayList<ItemStack> ret = super.getBlockDropped(world, x, y, z,
+                metadata, fortune);
+
+        if (metadata >= 7) {
+            for (int n = 0; n < 0 + fortune; n++) {
+                if (world.rand.nextInt(15) <= metadata) {
                     ret.add(new ItemStack(this.getSeedItem(), 1, 0));
                 }
             }

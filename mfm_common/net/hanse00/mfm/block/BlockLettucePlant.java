@@ -53,7 +53,7 @@ public class BlockLettucePlant extends BlockCrops {
     @Override
     public int getRenderType() {
         return 1;
-    }  
+    }
 
     @Override
     @SideOnly(Side.CLIENT)
