@@ -22,7 +22,7 @@ public class MFMDropsEvent {
 
     @ForgeSubscribe
     public void onEntityDrop(LivingDropsEvent event) {
-        if (event.entityLiving instanceof EntityPig) {
+        if (event.entityLiving instanceof EntityPig && ((EntityPig)event.entityLiving).getGrowingAge() >= 0) {
             rand = Math.random();
             if (event.source.getDamageType().equals("player")) {
                 if (rand <= 0.25d) {
