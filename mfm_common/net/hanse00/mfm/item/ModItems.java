@@ -56,6 +56,8 @@ public class ModItems {
         GameRegistry.addShapelessRecipe(new ItemStack(blt), new Object[] {
                 new ItemStack(baconCooked), new ItemStack(tomato),
                 new ItemStack(lettuce), new ItemStack(Item.bread) });
+        GameRegistry.addShapelessRecipe(new ItemStack(tomatoSeeds),
+                new Object[] { new ItemStack(tomato) });
 
         MinecraftForge.addGrassSeed(new ItemStack(lettuceSeeds), 2);
         MinecraftForge.addGrassSeed(new ItemStack(tomatoSeeds), 2);
