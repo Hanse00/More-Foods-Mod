@@ -1,5 +1,5 @@
 ## Welcome to the More Foods Mod github repo!
-####Latest official release: [MFM 0.1.0 build 10 for MC 1.5.1/1.5.2] (http://adf.ly/Q1xsh)
+####Latest official release: [MFM 0.1.1 build 11 for MC 1.5.1/1.5.2] (http://adf.ly/Q4R33)
 [Minecraft Forums Page] (http://www.minecraftforum.net/topic/1824855-)
 ###Contributing
 ***
