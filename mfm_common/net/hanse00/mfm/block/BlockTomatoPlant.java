@@ -1,12 +1,9 @@
 package net.hanse00.mfm.block;
 
-import java.util.ArrayList;
-
 import net.hanse00.mfm.item.ModItems;
 import net.hanse00.mfm.lib.Reference;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
