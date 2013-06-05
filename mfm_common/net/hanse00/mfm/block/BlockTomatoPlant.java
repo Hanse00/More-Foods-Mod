@@ -46,7 +46,7 @@ public class BlockTomatoPlant extends BlockCrops {
 
     @Override
     protected int getSeedItem() {
-        return ModItems.tomatoSeeds.itemID;
+        return 0;
     }
 
     @Override
@@ -66,23 +66,6 @@ public class BlockTomatoPlant extends BlockCrops {
             super.dropBlockAsItemWithChance(par1World, par2, par3, par4, par5,
                     par6, 0);
         }
-    }
-
-    @Override
-    public ArrayList<ItemStack> getBlockDropped(World world, int x, int y,
-            int z, int metadata, int fortune) {
-        ArrayList<ItemStack> ret = super.getBlockDropped(world, x, y, z,
-                metadata, fortune);
-
-        if (metadata >= 7) {
-            for (int n = 0; n < 0 + fortune; n++) {
-                if (world.rand.nextInt(15) <= metadata) {
-                    ret.add(new ItemStack(this.getSeedItem(), 1, 0));
-                }
-            }
-        }
-
-        return ret;
     }
 
     @Override
