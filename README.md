@@ -21,3 +21,5 @@ MFM crashes every time?  Have a suggestion?  Found a bug?  Create an issue now!
 3. Click `New Issue` below the `Fork` button.
 4. Enter your Issue's title (something that summarizes your issue), and then create a detailed description ("Hey, could you add/change xxx?" or "Hey, found an exploit:  stuff").
 5. Click `Submit new issue`, and you're done!
+
+Hejsa
